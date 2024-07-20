@@ -1,0 +1,17 @@
+.navbar-nav {
+    gap: 24px;
+}
+
+.navbar-brand h1 {
+    position: absolute;
+    opacity: 0;
+    font-size: 0;
+    color: transparent;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: $primary !important;
+    font-weight: 600;
+    transition: all 0.5s;
+}

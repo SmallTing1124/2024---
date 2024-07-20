@@ -1,0 +1,147 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.bg-gary {
+    background-color: #E0E0E0;
+}
+
+.px-100 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.px-50 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.g-30 {
+    gap: 30px;
+}
+
+.innerImg {
+    position: relative;
+    width: 100%;
+
+    .image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.copyright {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    gap: 36px;
+    justify-content: end;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    .menu-link {
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.5s;
+
+        &:hover {
+            opacity: 0.6;
+            transition: all 0.5s;
+        }
+    }
+}
+
+.type-list {
+    padding: 14px;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    gap: 28px;
+
+    .type-link {
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.5;
+        white-space: nowrap;
+
+        &:hover {
+            opacity: 0.5;
+            transition: all 0.5;
+        }
+    }
+}
+
+.product-card {
+    display: block;
+    text-decoration: none;
+    color: $dark;
+
+    .innerImg {
+        padding-top: 150%;
+
+        @media (max-width:991px) {
+            padding-top: 110%;
+        }
+    }
+
+    .price {
+        span {
+            display: inline-block;
+            margin-left: 6px;
+            color: #8D8D8D;
+        }
+    }
+
+    .icon-group {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 9;
+        margin-top: 2px;
+    }
+}
+
+.contact-area {
+    background-size: cover;
+    background-position: center;
+    padding: 312px 0 112px;
+
+    @media (min-width:992px) {
+        background-attachment: fixed;
+    }
+}
+
+.pagination {
+    gap: 20px;
+
+    .page-item.active>.page-link {
+        background-color: transparent;
+        color: $secondary;
+        border-bottom: 2px solid $secondary;
+    }
+
+    .page-link.page-link {
+        border: none;
+        border-radius: 0;
+        color: #000;
+        font-size: 20px;
+        padding: 0;
+        width: 19px;
+        text-align: center;
+    }
+}

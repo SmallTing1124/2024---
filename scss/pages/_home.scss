@@ -1,0 +1,55 @@
+.banner-area {
+    padding: 295px 0;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-width:992px) {
+        background-attachment: fixed;
+    }
+
+    @media screen and (max-width:991px) {
+        padding: 135px 0;
+        background-position: 20%;
+    }
+
+    .title {
+        font-size: 40px;
+
+        @media screen and (max-width:991px) {
+            font-size: 32px;
+        }
+    }
+}
+
+.sales-area {
+    padding: 60px 0;
+
+    .product-text {
+        @media (min-width:992px) {
+            padding: 0 110px;
+        }
+    }
+
+    .product-title {
+        font-weight: bold;
+    }
+
+    .product-image {
+        .innerImg {
+            height: 1080px;
+
+            @media (max-width:991px) {
+                height: 680px;
+            }
+
+        }
+    }
+}
+
+.about-area {
+    padding: 60px 0;
+
+    .innerImg {
+        padding-top: 520px;
+    }
+}
